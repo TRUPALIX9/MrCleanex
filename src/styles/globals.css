@@ -1,21 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --color-background: #ffffff; /* White */
+  --color-text: #000000; /* Black */
+  --color-secondary: #0d1b2a; /* Dark Blue */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --shade-light-blue: #1b263b;
+  --shade-medium-blue: #415a77;
+  --shade-dark-blue: #0d1b2a;
+
+  --font-main: "Roboto", Arial, sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--shade-medium-blue);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
