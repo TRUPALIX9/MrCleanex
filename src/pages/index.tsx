@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main
         style={{
           backgroundColor: "var(--color-background)",
@@ -17,7 +16,6 @@ export default function Home() {
         <h1>Welcome to MrCleanex</h1>
         <p>Providing exceptional cleaning services tailored to your needs.</p>
       </main>
-      <Footer />
     </>
   );
 }

@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 export default function About() {
   return (
     <>
-      <Navbar />{" "}
       <Box sx={{ padding: "2rem", textAlign: "center" }}>
         <Typography
           variant="h4"
