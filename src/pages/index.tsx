@@ -1,6 +1,8 @@
 "use client";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ServicesGrid from "../components/ServicesGrid";
+import HeroSection from "../components/Herosection";
 
 export default function Home() {
   return (
@@ -10,11 +12,10 @@ export default function Home() {
           backgroundColor: "var(--color-background)",
           color: "var(--color-text)",
           minHeight: "100vh",
-          padding: "2rem",
         }}
       >
-        <h1>Welcome to MrCleanex</h1>
-        <p>Providing exceptional cleaning services tailored to your needs.</p>
+        <HeroSection />
+        <ServicesGrid />
       </main>
     </>
   );
